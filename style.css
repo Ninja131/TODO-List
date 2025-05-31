@@ -1,0 +1,129 @@
+/* boiler plate */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans',serif;
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg,#181314,#151011);
+    padding-top: 1px;
+    
+}
+
+.todo-app{
+    background-color: #fffcfc;
+    width: 100%;
+    max-width: 530px;
+    margin: 100px auto ;
+    padding: 40px 32px;
+    border-radius: 16px;
+  
+}
+.todo_heading-wrap{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.todo_heading-wrap img{
+    height: 32px;
+}
+
+.todo_heading-wrap h2{
+    color: rgb(35, 16, 3);
+}
+
+
+
+
+/* input filed css */
+
+.todo_inputField-wrap{
+    width: 100%;
+    background-color: #e9e9e9;
+    height: 52px;
+    border-radius: 8px;
+    padding: 0 0 0 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-Field{
+    flex: 1;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.todo_inputField-wrap  button{
+    height: 100%;
+    padding: 0 40px;
+    background-color: #e24c2e;
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+    font-weight: 600;
+    color: #e2e2e2;
+    cursor: pointer;
+    
+}
+
+.todo_inputField-wrap  button:hover {
+
+    background-color: #b42f15;
+    
+}
+
+
+
+
+/* list styling */
+
+ul li{
+    list-style: none;
+    font-size: 1rem;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.text-wrap{
+   padding: 24px 16px;
+   display: flex;
+   gap: 8px;
+}
+
+.todo_list_content-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: bisque; */
+}
+
+.checked{
+    color: #888888;
+    text-decoration: line-through;
+}
+
+
+
+/* style for the back icon */
+.back_icon:hover{
+    background-color: #e4e4e4;
+    height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+}
